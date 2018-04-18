@@ -1,42 +1,59 @@
-body {
-  text-align: center;
-  align-items: center;
-  margin: auto;
-  color: black;
-  background-color: #631721;
+html {
+  font-family: 1rem/1.5 Arial, Helvetica, sans-serif;
 }
-.searchBox {
-  margin: auto;
-  max-width: 700px;
-}
-.outBox {
+
+body {  
   text-align: left;
   margin: auto;
-  margin-bottom: 20px;
-  max-width: 1000px;
-  border-style: solid;
-  border-color: #52016b;
-  border-radius: 7px;
-  background-color: #52016b;
+  max-width: 700px;
+  color: #000;
 }
-.headingBox {  
-  margin: -1px -1px auto -1px;
-  max-width: 1000px;
-  border-style: solid;
-  border-color: #52016b;
-  border-radius: 7px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background-color: #d6b9ad;
-  padding: 10px;
+
+h1, h2, h3, div, footer {
+  margin-bottom: 1.5rem;
 }
-.bodyBox {
-  background-color: #e0e0e0;
-  border-color: #52016b;
-  border-radius: 1px;
-  padding: 10px;
+
+a {
+  color: #0c2057;
 }
-.btn-secondary {
-  font-weight: bold;
+
+a:hover {
+  color: #14348c;
+}
+
+h1 {  
+  font: 4rem 'Roboto Slab', serif;
+  color: #570c16;
+}
+
+.out-box {
+  margin-bottom: 3rem;
+  border: 2px solid #57520c;
+  box-shadow: 1px 1px 1px #000;  
+}
+.heading-box h3{
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn {
+  background: #57520c;  
+}
+
+.btn:hover {
+  background: #877f11;
+}
+.search-title {
+  float: right;  
+}
+
+.search-box {
+  padding-right: .75rem;
+}
+
+h1, footer, .out-box {
+  padding: .375rem .75rem; /*Match Bootstrap buttons for alignment. */
+}
+
+.search-title, #random-search {
+  padding: .1875rem .75rem;
 }
