@@ -29,13 +29,13 @@ $(function () {
           var panelHTML =
             '<div class="out-box">' +
               '<div class="heading-box">' +
-                '<button type="button" class="btn btn-secondary search-title" value="'  + title + '">&larr; search title</button>' +
-                '<h3><a class="extra-hover" href="' + url + '" target="_blank">' + title + "</a></h3>" +                
+                '<h3><a class="extra-hover" href="' + url + '" target="_blank">' + title + "</a></h3>" +
+                '<button type="button" class="btn btn-secondary search-title" value="' + title + '">&larr; search title</button>' +
               "</div>" +
-              '<div class="body-box">' +
-                extract +
-              '</div>';
+            '<div class="body-box">' +
+              extract +
             '</div>';
+          '</div>';
           resultsDiv.insertAdjacentHTML("beforeend", panelHTML);
         }
       }

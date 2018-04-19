@@ -1,16 +1,27 @@
 html {
   font-family: 1rem/1.5 Arial, Helvetica, sans-serif;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Graz_University-Library_reading-room.jpg/1024px-Graz_University-Library_reading-room.jpg");
 }
 
 body {  
   text-align: left;
   margin: auto;
-  max-width: 700px;
+  max-width: 750px;
+  background: transparent;
   color: #000;
 }
 
-h1, h2, h3, div, footer {
+header, .heading-box, footer, #random-search {
   margin-bottom: 1.5rem;
+}
+
+h1, footer, .out-box {
+  /* Match Bootstrap buttons for alignment. */
+  padding: .375rem .75rem;  
+}
+
+h1, .search-box {
+  margin-bottom: 3rem;
 }
 
 a {
@@ -26,11 +37,31 @@ h1 {
   color: #570c16;
 }
 
+h3 {  
+  word-break:break-word
+ }
+
+.search-box {
+  padding-right: .75rem;
+}
+
+.search-title, #random-search {
+  padding: .1875rem .75rem;
+}
+
 .out-box {
   margin-bottom: 3rem;
   border: 2px solid #57520c;
   box-shadow: 1px 1px 1px #000;  
 }
+
+.heading-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .heading-box h3{
   font-family: 'Roboto Slab', serif;
 }
@@ -42,18 +73,19 @@ h1 {
 .btn:hover {
   background: #877f11;
 }
-.search-title {
-  float: right;  
+
+.btn:focus {  
+  box-shadow: none;
 }
 
-.search-box {
-  padding-right: .75rem;
+@media only screen and (max-width: 340px) {
+  html{
+    font-size: 0.8rem;
+  }
 }
 
-h1, footer, .out-box {
-  padding: .375rem .75rem; /*Match Bootstrap buttons for alignment. */
-}
-
-.search-title, #random-search {
-  padding: .1875rem .75rem;
+@media only screen and (max-width: 300px) {
+  html{
+    font-size: 0.75rem;
+  }
 }
