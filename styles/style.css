@@ -8,7 +8,7 @@ html {
   background-size: 100%, 1600px 1200px;
 }
 
-body {  
+body {
   text-align: left;
   margin: auto;
   max-width: 750px;
@@ -22,7 +22,7 @@ header, .heading-box, footer, #random-search {
 
 h1, footer, .out-box {
   /* Match Bootstrap buttons for alignment. */
-  padding: .375rem .75rem;  
+  padding: .375rem .75rem;
 }
 
 h1, .search-box {
@@ -37,19 +37,19 @@ a:hover {
   color: #2c4077;
 }
 
-h1 {  
+h1 {
   font: 4rem 'Roboto Slab', serif;
   color: #570c16;
 }
 
-h3 {  
+h3 {
   font-family: 'Roboto Slab', serif;
   word-break: break-word
  }
 
 footer {
   font-family: 'Roboto Slab', serif;
-  font-size: 0.9em;  
+  font-size: 0.9em;
 }
 
 .search-box {
@@ -64,7 +64,7 @@ footer {
   margin-bottom: 3rem;
   border: 1px solid #000;
   box-shadow: 1px 1px #000;
-  background: #fff;  
+  background: #fff;
 }
 
 .heading-box {
@@ -75,14 +75,14 @@ footer {
 }
 
 .btn {
-  background: #16570c;  
+  background: #16570c;
 }
 
 .btn:hover {
   background: #36772c;
 }
 
-.btn:focus {  
+.btn:focus {
   box-shadow: none;
 }
 
