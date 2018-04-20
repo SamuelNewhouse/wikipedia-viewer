@@ -5,10 +5,10 @@ html {
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-attachment: fixed, fixed;
-  background-size: 100%, 1600px 1200px;
+  background-size: 1600px 100%, 1600px 1200px;
 }
 
-body {  
+body {
   text-align: left;
   margin: auto;
   max-width: 750px;
@@ -22,7 +22,7 @@ header, .heading-box, footer, #random-search {
 
 h1, footer, .out-box {
   /* Match Bootstrap buttons for alignment. */
-  padding: .375rem .75rem;  
+  padding: .375rem .75rem;
 }
 
 h1, .search-box {
@@ -34,17 +34,23 @@ a {
 }
 
 a:hover {
-  color: #14348c;
+  color: #2c4077;
 }
 
-h1 {  
+h1 {
   font: 4rem 'Roboto Slab', serif;
   color: #570c16;
 }
 
-h3 {  
-  word-break:break-word
+h3 {
+  font-family: 'Roboto Slab', serif;
+  word-break: break-word
  }
+
+footer {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.9em;
+}
 
 .search-box {
   padding-right: .75rem;
@@ -56,36 +62,41 @@ h3 {
 
 .out-box {
   margin-bottom: 3rem;
-  border: 2px solid #57520c;
-  box-shadow: 1px 1px 1px #000;
-  background: #fff;  
+  border: 1px solid #000;
+  box-shadow: 1px 1px #000;
+  background: #fff;
 }
 
-.heading-box{
+.heading-box {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
 }
 
-.heading-box h3{
-  font-family: 'Roboto Slab', serif;
-}
-
 .btn {
-  background: #57520c;  
+  background: #16570c;
 }
 
 .btn:hover {
-  background: #877f11;
+  background: #36772c;
 }
 
-.btn:focus {  
+.btn:focus {
   box-shadow: none;
 }
 
+.search-title {
+  font-size: .9em;
+  background: #572c0c;
+}
+
+.search-title:hover {
+  background: #774c2c;
+}
+
 @media only screen and (max-width: 1600px) {
-  html{
+  html {
     background: radial-gradient(rgba(255,255,255,0.1),rgba(255,255,255,1) 60%),
     url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Graz_University-Library_reading-room.jpg");
     background-repeat: no-repeat, no-repeat;
@@ -94,14 +105,32 @@ h3 {
     background-size: 100%, 1600px 1200px;  }
 }
 
+@media only screen and (max-width: 460px) {
+  html {
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  html {
+    font-size: 0.85rem;
+  }
+}
+
 @media only screen and (max-width: 340px) {
-  html{
+  html {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 300px) {
-  html{
+  html {
     font-size: 0.75rem;
   }
 }

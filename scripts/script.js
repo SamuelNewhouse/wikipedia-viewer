@@ -10,10 +10,8 @@ $(function () {
     doRandomSearch();
   });
   $("#results").on("click", ".search-title", function () {
-    console.log("search-title");
     doTitleSearch(this.value);
   });
-
 
   function getAndDisplay(url) {
     $("#results").html("");
@@ -25,17 +23,17 @@ $(function () {
         if (pages.hasOwnProperty(k)) {
           var title = pages[k].title;
           var extract = pages[k].extract;
-          var url = "http://www.wikipedia.com/wiki/" + title;
+          var url = "https://www.wikipedia.org/wiki/" + title;
           var panelHTML =
             '<div class="out-box">' +
               '<div class="heading-box">' +
-                '<h3><a class="extra-hover" href="' + url + '" target="_blank">' + title + "</a></h3>" +
+                '<h3><a class="extra-hover" href="' + url + '" target="_blank">' + title + '</a></h3>' +
                 '<button type="button" class="btn btn-secondary search-title" value="' + title + '">&larr; search title</button>' +
-              "</div>" +
-            '<div class="body-box">' +
-              extract +
+              '</div>' +
+              '<div class="body-box">' +
+                extract +
+              '</div>' +
             '</div>';
-          '</div>';
           resultsDiv.insertAdjacentHTML("beforeend", panelHTML);
         }
       }
