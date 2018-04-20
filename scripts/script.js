@@ -10,7 +10,6 @@ $(function () {
     doRandomSearch();
   });
   $("#results").on("click", ".search-title", function () {
-    console.log("search-title");
     doTitleSearch(this.value);
   });
 
