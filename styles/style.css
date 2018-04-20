@@ -1,6 +1,11 @@
 html {
   font-family: 1rem/1.5 Arial, Helvetica, sans-serif;
-  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Graz_University-Library_reading-room.jpg/1024px-Graz_University-Library_reading-room.jpg");
+  background: radial-gradient(rgba(255,255,255,0.1),rgba(255,255,255,1) 650px),
+   url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Graz_University-Library_reading-room.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-attachment: fixed, fixed;
+  background-size: 100%, 1600px 1200px;
 }
 
 body {  
@@ -52,7 +57,8 @@ h3 {
 .out-box {
   margin-bottom: 3rem;
   border: 2px solid #57520c;
-  box-shadow: 1px 1px 1px #000;  
+  box-shadow: 1px 1px 1px #000;
+  background: #fff;  
 }
 
 .heading-box{
@@ -76,6 +82,16 @@ h3 {
 
 .btn:focus {  
   box-shadow: none;
+}
+
+@media only screen and (max-width: 1600px) {
+  html{
+    background: radial-gradient(rgba(255,255,255,0.1),rgba(255,255,255,1) 60%),
+    url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Graz_University-Library_reading-room.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-attachment: fixed, fixed;
+    background-size: 100%, 1600px 1200px;  }
 }
 
 @media only screen and (max-width: 340px) {
