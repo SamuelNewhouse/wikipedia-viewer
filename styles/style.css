@@ -1,42 +1,107 @@
-body {
-  text-align: center;
-  align-items: center;
-  margin: auto;
-  color: black;
-  background-color: #631721;
+html {
+  font-family: 1rem/1.5 Arial, Helvetica, sans-serif;
+  background: radial-gradient(rgba(255,255,255,0.1),rgba(255,255,255,1) 650px),
+   url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Graz_University-Library_reading-room.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-attachment: fixed, fixed;
+  background-size: 100%, 1600px 1200px;
 }
-.searchBox {
-  margin: auto;
-  max-width: 700px;
-}
-.outBox {
+
+body {  
   text-align: left;
   margin: auto;
-  margin-bottom: 20px;
-  max-width: 1000px;
-  border-style: solid;
-  border-color: #52016b;
-  border-radius: 7px;
-  background-color: #52016b;
+  max-width: 750px;
+  background: transparent;
+  color: #000;
 }
-.headingBox {  
-  margin: -1px -1px auto -1px;
-  max-width: 1000px;
-  border-style: solid;
-  border-color: #52016b;
-  border-radius: 7px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background-color: #d6b9ad;
-  padding: 10px;
+
+header, .heading-box, footer, #random-search {
+  margin-bottom: 1.5rem;
 }
-.bodyBox {
-  background-color: #e0e0e0;
-  border-color: #52016b;
-  border-radius: 1px;
-  padding: 10px;
+
+h1, footer, .out-box {
+  /* Match Bootstrap buttons for alignment. */
+  padding: .375rem .75rem;  
 }
-.btn-secondary {
-  font-weight: bold;
+
+h1, .search-box {
+  margin-bottom: 3rem;
+}
+
+a {
+  color: #0c2057;
+}
+
+a:hover {
+  color: #14348c;
+}
+
+h1 {  
+  font: 4rem 'Roboto Slab', serif;
+  color: #570c16;
+}
+
+h3 {  
+  word-break:break-word
+ }
+
+.search-box {
+  padding-right: .75rem;
+}
+
+.search-title, #random-search {
+  padding: .1875rem .75rem;
+}
+
+.out-box {
+  margin-bottom: 3rem;
+  border: 2px solid #57520c;
+  box-shadow: 1px 1px 1px #000;
+  background: #fff;  
+}
+
+.heading-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.heading-box h3{
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn {
+  background: #57520c;  
+}
+
+.btn:hover {
+  background: #877f11;
+}
+
+.btn:focus {  
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 1600px) {
+  html{
+    background: radial-gradient(rgba(255,255,255,0.1),rgba(255,255,255,1) 60%),
+    url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Graz_University-Library_reading-room.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-attachment: fixed, fixed;
+    background-size: 100%, 1600px 1200px;  }
+}
+
+@media only screen and (max-width: 340px) {
+  html{
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html{
+    font-size: 0.75rem;
+  }
 }

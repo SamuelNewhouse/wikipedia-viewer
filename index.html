@@ -1,32 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!-- Doctype HTML5 -->
+<!doctype html>
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/style.css" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="scripts/script.js"></script>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="This is my submission for the 'Build a Wikipedia Viewer' project on www.freecodecamp.com.">
+  <meta name="author" content="Samuel Newhouse">
   <title>Wikipedia Viewer</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 
 <body>
-  <br>
-  <button id="randomSearch" type="button" class="btn btn-secondary"><em>Get Random Articles</em></button>
-  <br>
-  <br>
-  <div class="searchBox">
-    <div class="input-group">
-      <input id="userSearchInp" type="text" class="form-control" placeholder="Search for...">
+
+  <header>
+    <h1>Wikipedia Viewer</h1>
+  </header>
+
+  <div>
+    <button id="random-search" type="button" class="btn btn-secondary">
+      Get Random Articles
+    </button>
+  </div>
+
+  <div class="search-box">
+    <span class="input-group">
+      <input id="search-input" type="text" class="form-control" placeholder="Search for...">
       <span class="input-group-btn">
-        <button id="userSearchBut" button="submit" class="btn btn-secondary"><em>Search Articles</em></button>
+        <button id="search-button" button="submit" class="btn btn-secondary">
+          Search Wikipedia
+        </button>
       </span>
-    </div>
+    </span>
   </div>
-  <br>
-  <div id="resultsDiv" class="results">
-  </div>
-  <p>Made by <a href="https://codepen.io/SamuelNewhouse" target="_blank">Samuel Newhouse</a></p>
+
+  <section id="results">
+  </section>
+
+  <footer>Made by
+    <a href="https://github.com/SamuelNewhouse" target="_blank">Samuel Newhouse</a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous" defer></script>
+  <script src="scripts/script.js" defer></script>
 </body>
 
 </html>
