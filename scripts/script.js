@@ -24,7 +24,7 @@ $(function () {
         if (pages.hasOwnProperty(k)) {
           var title = pages[k].title;
           var extract = pages[k].extract;
-          var url = "http://www.wikipedia.com/wiki/" + title;
+          var url = "https://www.wikipedia.org/wiki/" + title;
           var panelHTML =
             '<div class="out-box">' +
               '<div class="heading-box">' +
