@@ -1,5 +1,6 @@
 html {
-  font-family: 1rem/1.5 Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(rgba(255,255,255,0.1),rgba(255,255,255,1) 650px),
    url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Graz_University-Library_reading-room.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -9,36 +10,35 @@ html {
 }
 
 body {
-  text-align: left;
   margin: auto;
-  max-width: 750px;
+  padding: 0 5px;
+  max-width: 795px;
   background: transparent;
   color: #000;
 }
 
+footer, h1 {
+  text-align: center;
+}
+
 header, .heading-box, footer, #random-search {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 }
 
 h1, footer, .out-box {
   /* Match Bootstrap buttons for alignment. */
-  padding: .375rem .75rem;
-}
-
-h1, .search-box {
-  margin-bottom: 3rem;
+  padding: .375em .75em;
 }
 
 a {
   color: #0c2057;
 }
-
 a:hover {
   color: #2c4077;
 }
 
 h1 {
-  font: 4rem 'Roboto Slab', serif;
+  font: 3em 'Roboto Slab', serif;
   color: #570c16;
 }
 
@@ -53,17 +53,18 @@ footer {
 }
 
 .search-box {
-  padding-right: .75rem;
+  margin-bottom: 3em;
+  padding-right: .75em;
 }
 
 .search-title, #random-search {
-  padding: .1875rem .75rem;
+  padding: .1875em .75em;
 }
 
 .out-box {
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
   border: 1px solid #000;
-  box-shadow: 1px 1px #000;
+  box-shadow: 1px 1px 3px #000;
   background: #fff;
 }
 
@@ -73,15 +74,19 @@ footer {
   align-items: flex-start;
   width: 100%;
 }
+.heading-box h3 {
+  flex-shrink: 1;
+}
+.heading-box button {
+  flex-shrink: 0;
+}
 
 .btn {
   background: #16570c;
 }
-
 .btn:hover {
   background: #36772c;
 }
-
 .btn:focus {
   box-shadow: none;
 }
@@ -90,7 +95,6 @@ footer {
   font-size: .9em;
   background: #572c0c;
 }
-
 .search-title:hover {
   background: #774c2c;
 }
@@ -102,34 +106,35 @@ footer {
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-attachment: fixed, fixed;
-    background-size: 100%, 1600px 1200px;  }
+    background-size: 100%, 1600px 1200px;
+  }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 480px) {
   html {
     font-size: 0.95rem;
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 440px) {
   html {
     font-size: 0.9rem;
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   html {
     font-size: 0.85rem;
   }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 360px) {
   html {
     font-size: 0.8rem;
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
   html {
     font-size: 0.75rem;
   }
