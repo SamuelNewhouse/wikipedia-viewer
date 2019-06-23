@@ -25,7 +25,7 @@ header, .heading-box, footer, #random-search {
   margin-bottom: 1.5em;
 }
 
-h1, footer, .out-box {
+.out-box {
   /* Match Bootstrap buttons for alignment. */
   padding: .375em .75em;
 }
